@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Math.org</title>
+</head>
+
+<body>
+  <h1>Math.org</h1>
+
+  <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Simple Calculator</button>
+  <button class="tablink" onclick="openPage('News', this, 'green')">Random Number Generator</button>
+  <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+  <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+  <div id="Home" class="tabcontent">
+    <h2>Simple Calculator</h2>
+    <div class="calculator">
+
+      <div>
+        <input type="text" id="calculator-display" placeholder="0" disabled>
+      </div>
+
+      <div class="calculator-keys">
+        <button id="pi" value='π'>π</button>
+        <button id="par1" value='('>(</button>
+        <button id="par2" value=')'>)</button>
+        <button id="back" value=' '>
+          <<</button> <button id="add" value='+'>+
+        </button>
+        <button id="sub" value='-'>-</button>
+        <button id="mul" value='*'>&times;</button>
+        <button id="div" value='/'>÷</button>
+        <button id='seven' value='7'>7</button>
+        <button id='eight' value='8'>8</button>
+        <button id='nine' value='9'>9</button>
+        <button id="sqrt" value='%'>√</button>
+        <button id='four' value='4'>4</button>
+        <button id='five' value='5'>5</button>
+        <button id='six' value='6'>6</button>
+        <button id='one' value='1'>1</button>
+        <button id='two' value='2'>2</button>
+        <button id='three' value='3'>3</button>
+        <button id='zero' value='0'>0</button>
+        <button id="decimal" value='.'>.</button>
+        <button id="clear" value='c'>AC</button>
+        <button id="equal" value='='>=</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="News" class="tabcontent">
+    <h3>News</h3>
+    <p>Some news this fine day!</p>
+  </div>
+
+  <div id="Contact" class="tabcontent">
+    <h3>Contact</h3>
+    <p>Get in touch, or swing by for a cup of coffee.</p>
+  </div>
+
+  <div id="About" class="tabcontent">
+    <h3>About</h3>
+    <p>Who we are and what we do.</p>
+  </div>
+
+
+
+  <!-- Load JavaScript -->
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+body{
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.calculator-keys { 
+  display: grid; 
+  grid: auto auto auto auto/auto auto;
+}
+
+#equal{
+  grid-column: 4;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  height: 308px;
+  border-radius: 5px 5px 30px 5px;
+}
+
+.calculator{
+  width: 612px;
+  margin: 0px auto;
+}
+
+button{
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  margin: 2px;
+  opacity: 0.6;
+  transition: 0.2s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover {opacity: 1}
+
+button:focus {outline:0;}
+
+button,
+h2,
+input{
+  font-size: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1{
+  font-size: 60px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#calculator-display{
+  width: 600px;
+  height: 100px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  border: 1px solid #f4511e;
+  text-align: right;
+  padding-right: 10px;
+  border-radius: 30px 30px 5px 5px;
+}
+
+#zero{
+  border-radius: 5px 5px 5px 30px;
+}
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  margin: 0px;
+  border-radius: 0px;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: rgb(255, 211, 211);}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
